@@ -4,7 +4,7 @@
   "homepage": "https://github.com/centraldedados/subvencoes_vitalicias/",
   "version": "0.1.0",
   "description": "Lista dos beneficiários de subvenções mensais vitalícias do Estado",
-  "license": "PDDL-1.0",
+  "license": "ODbL",
   "sources": [
     {
       "name": "Público",
