@@ -1,0 +1,57 @@
+{
+  "name": "subvencoes_vitalicias",
+  "title": "Subvenções Vitalícias do Estado",
+  "homepage": "https://github.com/centraldedados/subvencoes_vitalicias/",
+  "version": "0.1.0",
+  "description": "Lista dos beneficiários de subvenções mensais vitalícias do Estado",
+  "license": "PDDL-1.0",
+  "sources": [
+    {
+      "name": "Público",
+      "web": "http://www.publico.pt"
+    },
+    {
+      "name": "Caixa Geral de Aposentações",
+      "web": "http://www.publico.pt"
+    }
+  ],
+  "resources": [
+    {
+      "name": "subvencoes",
+      "title": "Subvenções Vitalícias",
+      "path": "data/subvencoes.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 43963,
+      "schema": {
+        "fields": [
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Nome do beneficiário"
+          },
+          {
+            "name": "data_atribuicao",
+            "type": "date",
+            "description": "Data em que começou a atribuição"
+          },
+          {
+            "name": "valor",
+            "type": "number",
+            "description": "Valor mensal da subvenção"
+          },
+          {
+            "name": "estado",
+            "type": "string",
+            "description": "Estado da subvenção (ativa ou não)"
+          },
+          {
+            "name": "fundamento",
+            "type": "date",
+            "description": "Razão para o estado atual"
+          }
+        ]
+      }
+    }
+  ]
+}
